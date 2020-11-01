@@ -9,7 +9,60 @@
         Icon="recursos\formulary.ico"
         Height="550" Width="850"
         MinHeight="550" MinWidth="850">
-    <DockPanel Margin="5">
+    <DockPanel Margin="5"
+               LastChildFill="False">
         
+        <TextBlock DockPanel.Dock="Top"
+                   Text="Formulario"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+        
+        <DockPanel DockPanel.Dock="Bottom"
+                   LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left"
+                       Text="Adrián Cuenca"
+                       FontSize="20"
+                       FontStyle="Italic"/>
+            <Button DockPanel.Dock="Right" 
+                    Padding="3"
+                    Content="Cancelar"
+                    Width="100"/>
+            <Button DockPanel.Dock="Right" 
+                    Content="Aceptar"
+                    Padding="3"
+                    Width="100"/>
+        </DockPanel>
+        
+        <Image DockPanel.Dock="Right"
+               Source=".\recursos\foto.jpg"/>
+
+        <StackPanel DockPanel.Dock="Top">
+            <DockPanel>
+                <TextBlock Text="Nombre"/>
+                <Image DockPanel.Dock="Right"
+                       Source=".\recursos\info.png"
+                       Width="20"/>
+                <TextBox />
+            </DockPanel>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Top">
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="Aficiones"
+                          Width="200">
+                    <CheckBox Content="Hacer Deporte"/>
+                </GroupBox>
+                <GroupBox Header="Estado civil"
+                          Width="200">
+                    <RadioButton Content="Soltero"
+                                 GroupName="estadoCivil"
+                                 IsChecked="True" />
+                </GroupBox>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Top">
+
+        </StackPanel>
     </DockPanel>
 </Window>
